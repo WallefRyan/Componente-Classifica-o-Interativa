@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Overpass", sans-serif;
+
+
+}
+
+.container{
+    width: 80%;         /* ocupa a maior parte da tela em celular */
+    max-width: 350px;   /* não cresce demais em desktop */
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    margin: auto;
+    
+}
+
+header img{
+    padding-bottom: 5%;
+}
+
+header p{
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 10%;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;      /* espaçamento entre os círculos */
+    flex-wrap: wrap;
+}
+
+.navegacao button{
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: hsl(214, 14%, 34%);
+    color: white;
+
+}
+
+.navegacao button:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.navegacao button.selecionado {
+  background-color: white ;
+  color: hsl(25, 97%, 53%);
+}
+
+
+.enviar{
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    margin-top: 10%;
+    padding: 15px;
+    width: 100%;
+
+}
+
+.enviar:hover{
+    background-color: hsl(25, 90%, 60%);
+}
+
+@media (max-width: 400px) {
+    
+    
+    .navegacao {
+    gap: 7px;      /* espaçamento entre os círculos */
+    flex-wrap: wrap;
+    }
+}
